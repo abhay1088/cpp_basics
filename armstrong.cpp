@@ -1,22 +1,21 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main() {
-   //check armstrong number
-    int n,sum=0;
-    cin>>n;
-    int original=n;
-    while(n!=0){
-        int rem = n%10;
-        sum=sum+rem*rem*rem;
-        n=n/10;
+int main(){    
+int num , originalnum, remainder,sum=0;
+    cout<<"enter a number"<<endl;
+    cin>>num;
+    originalnum=num;
+    while(originalnum!=0){
+        remainder=originalnum%10;
+        sum=sum+remainder*remainder*remainder;
+        originalnum/=10;
     }
-    if(sum==original){
-        cout<<"armstrong";
+    if(sum==num){
+        cout<<num<<" is a armstrong number.";
     }
-    else{
-        cout<<"not armstrong";
-    }
+else{
+        cout<<num<<" is not a armstrong number.";
+   return 0;
 
-    return 0;
 }
