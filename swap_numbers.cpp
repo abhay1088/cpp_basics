@@ -1,4 +1,8 @@
  // ************ program to swap two numbers *******************
+#include <iostream>
+using namespace std;
+
+int main(){
  // 1. using temp variable
     int a=4,b=3,temp;
     cout<<"the value of a is:"<<a<<endl;
@@ -33,3 +37,5 @@
 // 4.swap(a,b);    using inbuilt function of algorithm header file
     cout<<"the value of a is:"<<a<<endl;
     cout<<"the value of b is:"<<b<<endl;
+ return 0;
+}
