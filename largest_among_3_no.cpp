@@ -14,5 +14,23 @@ int a,b,c;
     }
     if(c>=b&&c>=a){
         cout<<c<<" is the largest number";
+     
+// using  nested if else statement
+    if(a>b){
+        if(a>c){
+            cout<<"a is the largest number";
+        }
+        else{
+            cout<<" c is the largest number";
+        }
+    }
+    else{
+        if(b>c){
+        cout<<" b is the largest number";
+    }
+    else{
+        cout<<" c is the largest number";
+    }
+    }
       return 0;
     }
